@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Prod:</strong>
+  <%= @sell.prod_id %>
+</p>
+
+<p>
+  <strong>Fecha v:</strong>
+  <%= @sell.fecha_v %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @sell.cantidad %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @sell.total %>
+</p>
+
+<%= link_to 'Edit', edit_sell_path(@sell) %> |
+<%= link_to 'Back', sells_path %>
