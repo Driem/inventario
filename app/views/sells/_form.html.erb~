@@ -29,7 +29,7 @@
   </div>
  <div class="field">
     <%= f.label :cliente %><br>
-    <%= f.number_field :client_id %>
+    <%= f.number_field :cliente_id %>
   </div>
  
  <div class="actions">
