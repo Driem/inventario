@@ -1,5 +1,5 @@
 class Sell < ActiveRecord::Base
-attr_accessible :prod_id, :fecha_v, :cantidad, :total, :cliente_id, :client_id  
+attr_accessible :product_id, :fecha_v, :cantidad, :total, :client_id  
 belongs_to :product 
 belongs_to :client
 end

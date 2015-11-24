@@ -1380,3 +1380,1510 @@ Started GET "/assets/scaffolds.self-4c1c54b6a1c1dcf9785f027b01938e6cf1ceec7f49d6
 
 
 Started GET "/assets/sells.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-19 18:21:02 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-20 22:07:42 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 113ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 01:07:29 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 138ms (Views: 88.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-21 01:07:33 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.3ms)[0m  SELECT "sells".* FROM "sells"
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (122.3ms)
+Completed 200 OK in 647ms (Views: 610.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-21 01:07:34 -0600
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-21 01:07:34 -0600
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-21 01:07:34 -0600
+
+
+Started GET "/assets/scaffolds.self-4c1c54b6a1c1dcf9785f027b01938e6cf1ceec7f49d6dfba12bb0f7f473eb7fe.css?body=1" for 127.0.0.1 at 2015-11-21 01:07:35 -0600
+
+
+Started GET "/assets/sells.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-21 01:07:35 -0600
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-21 01:09:45 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.4ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (52.6ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.prod_id %></td>
+    21:         <td><%= sell.product.nombre %></td>
+    22:         <td><%= sell.fecha_v %></td>
+    23:         <td><%= sell.cantidad %></td>
+    24:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:21:in `block in _app_views_sells_index_html_erb___718227436603939033_70319330546180'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___718227436603939033_70319330546180'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (168.9ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-21 01:10:19 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  Rendered sells/index.html.erb within layouts/application (17.8ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         
+    21:         <td><%= sell.product.nombre %></td>
+    22:         <td><%= sell.fecha_v %></td>
+    23:         <td><%= sell.cantidad %></td>
+    24:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:21:in `block in _app_views_sells_index_html_erb___718227436603939033_70319121670740'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___718227436603939033_70319121670740'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (110.2ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-21 01:10:20 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.4ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         
+    21:         <td><%= sell.product.nombre %></td>
+    22:         <td><%= sell.fecha_v %></td>
+    23:         <td><%= sell.cantidad %></td>
+    24:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:21:in `block in _app_views_sells_index_html_erb___718227436603939033_70319121670740'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___718227436603939033_70319121670740'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (10.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (5.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (109.1ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-21 01:10:38 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-21 01:10:38 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (12.0ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 65ms (Views: 52.0ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 22:34:42 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 104ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-21 22:35:21 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.3ms)[0m  SELECT "sells".* FROM "sells"
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (128.5ms)
+Completed 200 OK in 892ms (Views: 840.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-21 22:35:22 -0600
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-21 22:35:22 -0600
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-21 22:35:22 -0600
+
+
+Started GET "/assets/sells.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-21 22:35:22 -0600
+
+
+Started GET "/assets/scaffolds.self-4c1c54b6a1c1dcf9785f027b01938e6cf1ceec7f49d6dfba12bb0f7f473eb7fe.css?body=1" for 127.0.0.1 at 2015-11-21 22:35:22 -0600
+  [1m[36mSell Load (2.5ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mSell Load (0.8ms)[0m  SELECT "sells".* FROM "sells"
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "sells" WHERE "sells"."id" = ?  [["id", 10]]
+  [1m[36m (197.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-21 22:36:28 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.2ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 508ms (Views: 462.0ms | ActiveRecord: 0.4ms)
+  [1m[36mSell Load (3.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveclienteIFromSell (20151122082504)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151122082504"]]
+  [1m[35m (155.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-22 02:26:03 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (6.5ms)
+Completed 200 OK in 71ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-22 02:26:14 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (111.7ms)
+  Rendered sells/new.html.erb within layouts/application (145.2ms)
+Completed 200 OK in 695ms (Views: 664.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/sells" for 127.0.0.1 at 2015-11-22 02:26:21 -0600
+Processing by SellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/51ugagIZmP1UYA0KsraSVnXvsTaTV/g4oqhP71hTuIsz/19EERp7rKUFEhGcsbyJkghQY36RnqbTJKyJtPBHQ==", "sell"=>{"prod_id"=>"1", "fecha_v(1i)"=>"2015", "fecha_v(2i)"=>"11", "fecha_v(3i)"=>"22", "cantidad"=>"1", "total"=>"1", "client_id"=>"1"}, "commit"=>"Create Sell"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sells" ("prod_id", "cantidad", "total", "client_id", "fecha_v", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["prod_id", 1], ["cantidad", 1], ["total", 1.0], ["client_id", 1], ["fecha_v", "2015-11-22"], ["created_at", "2015-11-22 08:26:21.072702"], ["updated_at", "2015-11-22 08:26:21.072702"]]
+  [1m[35m (187.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/sells/11
+Completed 302 Found in 206ms (ActiveRecord: 188.2ms)
+
+
+Started GET "/sells/11" for 127.0.0.1 at 2015-11-22 02:26:21 -0600
+Processing by SellsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT  "sells".* FROM "sells" WHERE "sells"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered sells/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 116ms (Views: 69.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 02:26:23 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.2ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (32.8ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb__2598379817060922889_70248419247020'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb__2598379817060922889_70248419247020'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (24.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (9.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (127.8ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 02:27:26 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.9ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  Rendered sells/index.html.erb within layouts/application (16.1ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb__2598379817060922889_70248459681360'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb__2598379817060922889_70248459681360'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (98.2ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 02:30:24 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.9ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb__2598379817060922889_70248459681360'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb__2598379817060922889_70248459681360'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (29.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (9.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (79.0ms)
+
+
+Started GET "/product" for 127.0.0.1 at 2015-11-22 02:30:33 -0600
+
+ActionController::RoutingError (No route matches [GET] "/product"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/angie/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/angie/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/angie/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (25.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (175.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (87.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-22 02:30:35 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (2.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 128ms (Views: 116.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-11-22 02:30:40 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 108ms (Views: 102.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-22 02:30:42 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2015-11-22 02:30:43 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/_form.html.erb (22.3ms)
+  Rendered products/edit.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 87ms (Views: 78.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/products/1" for 127.0.0.1 at 2015-11-22 02:30:50 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VSeudv60DfHbpJo9VtfF5qwWrVeaXW+/UD42syMdELuGdT2KRvgCfJxhDkE6b9ld04ky0s3qdiUp+AU+uK+fRA==", "product"=>{"nombre"=>"aa", "descripcion"=>"Pollos", "precio"=>"12.0", "cantidad"=>"5"}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.6ms)[0m  [1mUPDATE "products" SET "descripcion" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["descripcion", "Pollos"], ["updated_at", "2015-11-22 08:30:50.232542"], ["id", 1]]
+  [1m[35m (142.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 167ms (ActiveRecord: 147.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-11-22 02:30:50 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (2.8ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 66ms (Views: 61.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-22 02:30:52 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-22 02:30:52 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 02:30:57 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.3ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb__2598379817060922889_70248459681360'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb__2598379817060922889_70248459681360'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (7.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (56.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (92.5ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 02:31:23 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.4ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 134ms (Views: 132.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 02:34:09 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.5ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (20.1ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `product_id' for #<Sell:0x007f40e4129338>):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product_id %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb___1539986763084601252_69958341006660'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___1539986763084601252_69958341006660'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (64.6ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 02:35:35 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.6ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (71.4ms)
+Completed 200 OK in 439ms (Views: 435.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 02:35:36 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddProductIdToSell (20151122085323)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "sells" ADD "Product_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151122085323"]]
+  [1m[36m (193.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.9ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSell Load (7.1ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mDELETE FROM "sells" WHERE "sells"."id" = ?[0m  [["id", 11]]
+  [1m[35m (454.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveclienteIdFromSell (20151122090024)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151122090024"]]
+  [1m[35m (190.2ms)[0m  commit transaction
+Migrating to RemoveClienteIdFromSell (20151122090045)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TEMPORARY TABLE "asells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "prod_id" integer, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "cliente_id" integer, "client_id" integer, "Product_id" integer) 
+  [1m[36m (0.3ms)[0m  [1mSELECT * FROM "sells"[0m
+  [1m[35m (0.8ms)[0m  DROP TABLE "sells"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "sells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "prod_id" integer, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "client_id" integer, "Product_id" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "asells"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "asells"[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151122090045"]]
+  [1m[36m (188.5ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveProductIdFromSell (20151122090102)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TEMPORARY TABLE "asells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "prod_id" integer, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "client_id" integer, "Product_id" integer) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "sells"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "sells"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "sells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "prod_id" integer, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "client_id" integer, "Product_id" integer) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "asells"[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "asells"
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151122090102"]]
+  [1m[35m (173.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 03:03:54 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.3ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 272ms (Views: 245.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-22 03:03:56 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (36.0ms)
+  Rendered sells/new.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 121ms (Views: 99.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-22 03:03:56 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (6.9ms)
+  Rendered sells/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sells" for 127.0.0.1 at 2015-11-22 03:04:02 -0600
+Processing by SellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0zA4QCOCb1lcmVHTBKjudrO1Ures+wBFRETzftpbCcUAYqu8m85g1Btcxa9oEPLNzCrNMvtMGd89gsDzQemGOg==", "sell"=>{"prod_id"=>"1", "fecha_v(1i)"=>"2015", "fecha_v(2i)"=>"11", "fecha_v(3i)"=>"22", "cantidad"=>"1", "total"=>"1", "client_id"=>"1"}, "commit"=>"Create Sell"}
+Unpermitted parameter: prod_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.8ms)[0m  INSERT INTO "sells" ("cantidad", "total", "client_id", "fecha_v", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["cantidad", 1], ["total", 1.0], ["client_id", 1], ["fecha_v", "2015-11-22"], ["created_at", "2015-11-22 09:04:02.759406"], ["updated_at", "2015-11-22 09:04:02.759406"]]
+  [1m[36m (174.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sells/1
+Completed 302 Found in 206ms (ActiveRecord: 182.0ms)
+
+
+Started GET "/sells/1" for 127.0.0.1 at 2015-11-22 03:04:03 -0600
+Processing by SellsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSell Load (4.4ms)[0m  SELECT  "sells".* FROM "sells" WHERE "sells"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/show.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 4.4ms)
+
+ActionView::Template::Error (undefined method `product_id' for #<Sell:0x007f98cc125c70>):
+    2: 
+    3: <p>
+    4:   <strong>Prod:</strong>
+    5:   <%= @sell.product_id %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/sells/show.html.erb:5:in `_app_views_sells_show_html_erb__179271139367620206_70147117752700'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (26.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (114.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (4.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (91.2ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 03:05:28 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (2.8ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  Rendered sells/index.html.erb within layouts/application (58.5ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 2.8ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb___4126452821432234600_48085700'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___4126452821432234600_48085700'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (83.6ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 03:09:03 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.5ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb___4126452821432234600_70147117360920'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___4126452821432234600_70147117360920'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (25.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (96.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-22 03:09:10 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 145ms (Views: 142.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-22 03:09:11 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2015-11-22 03:09:16 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/_form.html.erb (15.3ms)
+  Rendered products/edit.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 80ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2015-11-22 03:09:16 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/_form.html.erb (13.6ms)
+  Rendered products/edit.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/products/1" for 127.0.0.1 at 2015-11-22 03:09:31 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7g1B+wqsnh4JxrLg0o8YHMKntau/W3ISGv2Ia76+LGs9X9IHsuCRk04DJpy+NwSnvTgqLujsa4hjO7vmJQyjlA==", "product"=>{"nombre"=>"Pollo", "descripcion"=>"Pollo frito", "precio"=>"12.0", "cantidad"=>"5"}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "products" SET "nombre" = ?, "descripcion" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["nombre", "Pollo"], ["descripcion", "Pollo frito"], ["updated_at", "2015-11-22 09:09:31.175602"], ["id", 1]]
+  [1m[35m (165.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 182ms (ActiveRecord: 166.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-11-22 03:09:31 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-22 03:09:34 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 03:09:53 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  Rendered sells/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb___4126452821432234600_70147117360920'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___4126452821432234600_70147117360920'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-22 11:22:50 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (7.4ms)
+Completed 200 OK in 110ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 11:22:54 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.5ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (168.9ms)
+Completed 500 Internal Server Error in 327ms (ActiveRecord: 1.9ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb__2462681356352611645_39792960'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb__2462681356352611645_39792960'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (134.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (114.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (310.8ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-22 11:22:59 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  Rendered sells/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb__2462681356352611645_39792960'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb__2462681356352611645_39792960'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (29.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (6.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (8.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (71.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (158.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 23:51:59 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 81ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2015-11-23 23:52:17 -0600
+
+ActionController::RoutingError (No route matches [GET] "/sell"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/angie/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/angie/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/angie/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (77.7ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-23 23:52:21 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.3ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (58.5ms)
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 2.2ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb___1643097748177303650_40637880'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___1643097748177303650_40637880'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (7.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (31.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (61.9ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-23 23:53:22 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.4ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (130.7ms)
+Completed 200 OK in 581ms (Views: 578.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-23 23:53:23 -0600
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 23:53:23 -0600
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 23:53:23 -0600
+
+
+Started GET "/assets/sells.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 23:53:23 -0600
+
+
+Started GET "/assets/scaffolds.self-4c1c54b6a1c1dcf9785f027b01938e6cf1ceec7f49d6dfba12bb0f7f473eb7fe.css?body=1" for 127.0.0.1 at 2015-11-23 23:53:23 -0600
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-23 23:53:26 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (86.0ms)
+  Rendered sells/new.html.erb within layouts/application (112.6ms)
+Completed 200 OK in 158ms (Views: 157.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sells" for 127.0.0.1 at 2015-11-23 23:53:31 -0600
+Processing by SellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9UmLyL75/RsnGK0aTwEOAjYkrp1q5x8JiIdnsntgMPKcXozSDQoZ9O9jVj+aggW4Ge5TfcyVJ/ukKpCftL5Sdw==", "sell"=>{"prod_id"=>"1", "fecha_v(1i)"=>"2015", "fecha_v(2i)"=>"11", "fecha_v(3i)"=>"24", "cantidad"=>"1", "total"=>"1", "client_id"=>"1"}, "commit"=>"Create Sell"}
+Unpermitted parameter: prod_id
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sells" ("cantidad", "total", "client_id", "fecha_v", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["cantidad", 1], ["total", 1.0], ["client_id", 1], ["fecha_v", "2015-11-24"], ["created_at", "2015-11-24 05:53:31.637586"], ["updated_at", "2015-11-24 05:53:31.637586"]]
+  [1m[36m (212.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sells/2
+Completed 302 Found in 225ms (ActiveRecord: 213.6ms)
+
+
+Started GET "/sells/2" for 127.0.0.1 at 2015-11-23 23:53:31 -0600
+Processing by SellsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSell Load (0.4ms)[0m  SELECT  "sells".* FROM "sells" WHERE "sells"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered sells/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 109ms (Views: 48.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-23 23:53:33 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-23 23:53:52 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.3ms)[0m  SELECT "sells".* FROM "sells"
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-23 23:53:54 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (9.5ms)
+  Rendered sells/new.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `product_id' for #<Sell:0x007f8fb8494e28>):
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :Product_id %><br>
+    16:     <%= f.number_field :product_id %>
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :fecha_v %><br>
+  app/views/sells/_form.html.erb:16:in `block in _app_views_sells__form_html_erb__3624036141791328313_70127624437900'
+  app/views/sells/_form.html.erb:1:in `_app_views_sells__form_html_erb__3624036141791328313_70127624437900'
+  app/views/sells/new.html.erb:3:in `_app_views_sells_new_html_erb___3411737594389457270_70127689355760'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (52.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (26.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (115.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (9.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (119.5ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-23 23:54:13 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (61.7ms)
+  Rendered sells/new.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 121ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-23 23:54:13 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (20.1ms)
+  Rendered sells/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sells" for 127.0.0.1 at 2015-11-23 23:54:19 -0600
+Processing by SellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IBhXOqp2qId+fDaAkPINW4N2C9tu/T+SvyEiZSTV1BRJD1AgGYVMaLYHzaVFcQbhrLz2O8iPB2CTjNVI6wu2kQ==", "sell"=>{"Product_id"=>"1", "fecha_v(1i)"=>"2015", "fecha_v(2i)"=>"11", "fecha_v(3i)"=>"24", "cantidad"=>"1", "total"=>"1", "client_id"=>"1"}, "commit"=>"Create Sell"}
+Unpermitted parameter: Product_id
+  [1m[36m (1.9ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sells" ("cantidad", "total", "client_id", "fecha_v", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["cantidad", 1], ["total", 1.0], ["client_id", 1], ["fecha_v", "2015-11-24"], ["created_at", "2015-11-24 05:54:19.491490"], ["updated_at", "2015-11-24 05:54:19.491490"]]
+  [1m[36m (166.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sells/3
+Completed 302 Found in 182ms (ActiveRecord: 168.3ms)
+
+
+Started GET "/sells/3" for 127.0.0.1 at 2015-11-23 23:54:19 -0600
+Processing by SellsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSell Load (0.2ms)[0m  SELECT  "sells".* FROM "sells" WHERE "sells"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered sells/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 57ms (Views: 50.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-23 23:54:22 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.2ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-23 23:55:11 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.5ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 126ms (Views: 105.9ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-23 23:55:13 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (12.1ms)
+  Rendered sells/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sells" for 127.0.0.1 at 2015-11-23 23:55:18 -0600
+Processing by SellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6c+thj80WAfu/t+W0t8BjMTdr+a44yH6dz8osSo5unaA2KqcjMe86CaFJLMHXAo26xdSBh6RGQhbkt+c5efY8w==", "sell"=>{"Product_id"=>"1", "fecha_v(1i)"=>"2015", "fecha_v(2i)"=>"11", "fecha_v(3i)"=>"24", "cantidad"=>"1", "total"=>"1", "client_id"=>"1"}, "commit"=>"Create Sell"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sells" ("Product_id", "cantidad", "total", "client_id", "fecha_v", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["Product_id", 1], ["cantidad", 1], ["total", 1.0], ["client_id", 1], ["fecha_v", "2015-11-24"], ["created_at", "2015-11-24 05:55:18.616542"], ["updated_at", "2015-11-24 05:55:18.616542"]]
+  [1m[36m (175.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sells/4
+Completed 302 Found in 190ms (ActiveRecord: 175.6ms)
+
+
+Started GET "/sells/4" for 127.0.0.1 at 2015-11-23 23:55:18 -0600
+Processing by SellsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mSell Load (0.3ms)[0m  SELECT  "sells".* FROM "sells" WHERE "sells"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered sells/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-23 23:55:20 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 95ms (Views: 92.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-23 23:55:42 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.3ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (35.7ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb___1643097748177303650_70127804555000'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___1643097748177303650_70127804555000'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (6.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (5.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (95.3ms)
+  [1m[36mSell Load (3.1ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "sells" WHERE "sells"."id" = ?[0m  [["id", 1]]
+  [1m[35m (194.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "sells" WHERE "sells"."id" = ?  [["id", 2]]
+  [1m[36m (142.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "sells" WHERE "sells"."id" = ?[0m  [["id", 3]]
+  [1m[35m (153.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "sells" WHERE "sells"."id" = ?  [["id", 4]]
+  [1m[36m (142.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-24 10:39:51 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.2ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 721ms (Views: 633.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-24 10:39:53 -0600
+
+
+Started GET "/assets/clients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-24 10:39:53 -0600
+
+
+Started GET "/assets/sells.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-24 10:39:53 -0600
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-24 10:39:53 -0600
+
+
+Started GET "/assets/scaffolds.self-4c1c54b6a1c1dcf9785f027b01938e6cf1ceec7f49d6dfba12bb0f7f473eb7fe.css?body=1" for 127.0.0.1 at 2015-11-24 10:39:53 -0600
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-24 10:39:58 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (213.9ms)
+  Rendered sells/new.html.erb within layouts/application (292.7ms)
+Completed 200 OK in 388ms (Views: 373.7ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/sells" for 127.0.0.1 at 2015-11-24 10:40:03 -0600
+Processing by SellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GQlxfF5CjSC2l9vbtCDgSMX/CKf5vFYavts6oqpQTZ/MZwlHHSc4kCl2+qM9KQZwy5fD66DyxGRpKF9xAMDQoQ==", "sell"=>{"Product_id"=>"1", "fecha_v(1i)"=>"2015", "fecha_v(2i)"=>"11", "fecha_v(3i)"=>"24", "cantidad"=>"1", "total"=>"1", "client_id"=>"1"}, "commit"=>"Create Sell"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sells" ("Product_id", "cantidad", "total", "client_id", "fecha_v", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["Product_id", 1], ["cantidad", 1], ["total", 1.0], ["client_id", 1], ["fecha_v", "2015-11-24"], ["created_at", "2015-11-24 16:40:03.401413"], ["updated_at", "2015-11-24 16:40:03.401413"]]
+  [1m[36m (150.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sells/5
+Completed 302 Found in 194ms (ActiveRecord: 150.6ms)
+
+
+Started GET "/sells/5" for 127.0.0.1 at 2015-11-24 10:40:03 -0600
+Processing by SellsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mSell Load (0.4ms)[0m  SELECT  "sells".* FROM "sells" WHERE "sells"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered sells/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 124ms (Views: 73.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-24 10:40:05 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  Rendered sells/index.html.erb within layouts/application (50.4ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `Product' for #<Sell:0x00000002dfbb08>):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.Product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb___2398991471358925299_49512900'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb___2398991471358925299_49512900'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (26.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.4ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (87.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveProducttIdToSell (20151124170737)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TEMPORARY TABLE "asells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "prod_id" integer, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "client_id" integer, "Product_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "sells"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "asells" ("id","prod_id","fecha_v","cantidad","total","created_at","updated_at","client_id","Product_id") VALUES (5, NULL, '2015-11-24', 1, 1, '2015-11-24 16:40:03.401413', '2015-11-24 16:40:03.401413', 1, 1)[0m
+  [1m[35m (1.8ms)[0m  DROP TABLE "sells"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "sells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "prod_id" integer, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "client_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "asells"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "sells" ("id","prod_id","fecha_v","cantidad","total","created_at","updated_at","client_id") VALUES (5, NULL, '2015-11-24', 1, 1, '2015-11-24 16:40:03.401413', '2015-11-24 16:40:03.401413', 1)[0m
+  [1m[35m (13.4ms)[0m  DROP TABLE "asells"
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151124170737"]]
+  [1m[35m (187.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddProductIdToSell (20151124170936)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "sells" ADD "product_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151124170936"]]
+  [1m[36m (222.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveProdIdToSell (20151124171059)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (5.1ms)[0m  [1mCREATE TEMPORARY TABLE "asells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "prod_id" integer, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "client_id" integer, "product_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "sells"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "asells" ("id","prod_id","fecha_v","cantidad","total","created_at","updated_at","client_id","product_id") VALUES (5, NULL, '2015-11-24', 1, 1, '2015-11-24 16:40:03.401413', '2015-11-24 16:40:03.401413', 1, NULL)[0m
+  [1m[35m (4.7ms)[0m  DROP TABLE "sells"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "sells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "prod_id" integer, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "client_id" integer, "product_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "asells"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "sells" ("id","prod_id","fecha_v","cantidad","total","created_at","updated_at","client_id","product_id") VALUES (5, NULL, '2015-11-24', 1, 1, '2015-11-24 16:40:03.401413', '2015-11-24 16:40:03.401413', 1, NULL)[0m
+  [1m[35m (1.4ms)[0m  DROP TABLE "asells"
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151124171059"]]
+  [1m[35m (175.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-24 11:14:22 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 84ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-24 11:14:31 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.4ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (91.0ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+    17:   <tbody>
+    18:     <% @sells.each do |sell| %>
+    19:       <tr>
+    20:         <td><%= sell.product.nombre %></td>
+    21:         <td><%= sell.fecha_v %></td>
+    22:         <td><%= sell.cantidad %></td>
+    23:         <td><%= sell.total %></td>
+  app/views/sells/index.html.erb:20:in `block in _app_views_sells_index_html_erb__3564047208894801258_34576120'
+  app/views/sells/index.html.erb:18:in `_app_views_sells_index_html_erb__3564047208894801258_34576120'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.2ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (83.0ms)
+  [1m[36mSell Load (2.8ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "sells" WHERE "sells"."id" = ?[0m  [["id", 5]]
+  [1m[35m (168.2ms)[0m  commit transaction
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mSell Load (0.6ms)[0m  SELECT "sells".* FROM "sells"
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-24 11:16:12 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (0.3ms)[0m  SELECT "sells".* FROM "sells"
+  Rendered sells/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 656ms (Views: 607.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-24 11:16:15 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (81.7ms)
+  Rendered sells/new.html.erb within layouts/application (88.9ms)
+Completed 200 OK in 182ms (Views: 151.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sells" for 127.0.0.1 at 2015-11-24 11:16:20 -0600
+Processing by SellsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4EOZ/XGtFzNXp83fKlkYgLqAYcLqVUf4K8Nz+tpb1fQ1LeHGMsiig8hG7KejUP64tOiqjrMb1Yb8MBYpcMtIyg==", "sell"=>{"product_id"=>"1", "fecha_v(1i)"=>"2015", "fecha_v(2i)"=>"11", "fecha_v(3i)"=>"24", "cantidad"=>"1", "total"=>"1", "client_id"=>"1"}, "commit"=>"Create Sell"}
+  [1m[36m (1.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sells" ("product_id", "cantidad", "total", "client_id", "fecha_v", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["product_id", 1], ["cantidad", 1], ["total", 1.0], ["client_id", 1], ["fecha_v", "2015-11-24"], ["created_at", "2015-11-24 17:16:20.879748"], ["updated_at", "2015-11-24 17:16:20.879748"]]
+  [1m[36m (180.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sells/6
+Completed 302 Found in 214ms (ActiveRecord: 181.9ms)
+
+
+Started GET "/sells/6" for 127.0.0.1 at 2015-11-24 11:16:21 -0600
+Processing by SellsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mSell Load (0.3ms)[0m  SELECT  "sells".* FROM "sells" WHERE "sells"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered sells/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 91ms (Views: 62.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-24 11:16:23 -0600
+Processing by SellsController#index as HTML
+  [1m[36mSell Load (0.3ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mClient Load (3.1ms)[0m  [1mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (143.9ms)
+Completed 200 OK in 213ms (Views: 206.2ms | ActiveRecord: 5.5ms)
+  [1m[36mProduct Load (1.8ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mSell Load (0.3ms)[0m  SELECT "sells".* FROM "sells"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveProdIdToSell (20151124171759)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TEMPORARY TABLE "asells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "prod_id" integer, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "client_id" integer, "product_id" integer) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "sells"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "asells" ("id","prod_id","fecha_v","cantidad","total","created_at","updated_at","client_id","product_id") VALUES (6, NULL, '2015-11-24', 1, 1, '2015-11-24 17:16:20.879748', '2015-11-24 17:16:20.879748', 1, 1)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "sells"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "sells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fecha_v" date, "cantidad" integer, "total" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "client_id" integer, "product_id" integer) [0m
+  [1m[35m (0.3ms)[0m  SELECT * FROM "asells"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "sells" ("id","fecha_v","cantidad","total","created_at","updated_at","client_id","product_id") VALUES (6, '2015-11-24', 1, 1, '2015-11-24 17:16:20.879748', '2015-11-24 17:16:20.879748', 1, 1)[0m
+  [1m[35m (0.6ms)[0m  DROP TABLE "asells"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151124171759"]]
+  [1m[35m (225.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mSell Load (2.6ms)[0m  [1mSELECT "sells".* FROM "sells"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-24 11:18:59 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (8.2ms)
+Completed 200 OK in 94ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-24 11:19:11 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (41.0ms)
+  Rendered sells/new.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 520ms (Views: 487.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-24 11:19:12 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (9.4ms)
+  Rendered sells/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 77ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/product" for 127.0.0.1 at 2015-11-24 11:19:22 -0600
+
+ActionController::RoutingError (No route matches [GET] "/product"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/angie/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/angie/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/angie/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.6ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (94.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.5ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (5.3ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/angie/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (104.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-24 11:19:25 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (4.9ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 126ms (Views: 105.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-24 11:19:27 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (72.0ms)
+  Rendered products/new.html.erb within layouts/application (77.3ms)
+Completed 200 OK in 160ms (Views: 158.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2015-11-24 11:20:03 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z8sjAWjSmcbHti7rC9z6Y7rxnX37oW8MWJYBOfJHg0GypVs6K7csdlhXD5OC1RxbtJlWMaLv/XKPZWTqWNcefw==", "product"=>{"nombre"=>"Azucar", "descripcion"=>"Azucar morena", "precio"=>"15", "cantidad"=>"2"}, "commit"=>"Create Product"}
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "products" ("nombre", "descripcion", "precio", "cantidad", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "Azucar"], ["descripcion", "Azucar morena"], ["precio", 15.0], ["cantidad", 2], ["created_at", "2015-11-24 17:20:03.969816"], ["updated_at", "2015-11-24 17:20:03.969816"]]
+  [1m[36m (163.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 191ms (ActiveRecord: 164.7ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2015-11-24 11:20:04 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered products/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 101ms (Views: 79.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-24 11:20:06 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sells" for 127.0.0.1 at 2015-11-24 11:20:25 -0600
+Processing by SellsController#index as HTML
+  [1m[35mSell Load (2.4ms)[0m  SELECT "sells".* FROM "sells"
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mClient Load (0.4ms)[0m  SELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sells/index.html.erb within layouts/application (111.4ms)
+Completed 200 OK in 221ms (Views: 214.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/sells/new" for 127.0.0.1 at 2015-11-24 11:20:27 -0600
+Processing by SellsController#new as HTML
+  Rendered sells/_form.html.erb (28.9ms)
+  Rendered sells/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 119ms (Views: 117.9ms | ActiveRecord: 0.0ms)

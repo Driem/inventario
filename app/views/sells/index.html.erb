@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Prod</th>
+      <th>Producto</th>
       <th>Fecha v</th>
       <th>Cantidad</th>
       <th>Total</th>
@@ -17,7 +17,7 @@
   <tbody>
     <% @sells.each do |sell| %>
       <tr>
-        <td><%= sell.prod_id %></td>
+        <td><%= sell.product.nombre %></td>
         <td><%= sell.fecha_v %></td>
         <td><%= sell.cantidad %></td>
         <td><%= sell.total %></td>
