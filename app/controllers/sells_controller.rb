@@ -25,7 +25,10 @@ class SellsController < ApplicationController
   # POST /sells.json
   def create
     @sell = Sell.new(sell_params)
-
+	date_current = DateTime.now.to_date
+	@sell.fecha_v = date_current
+	total = @sell.cantidad * Product.find_by_id(@sell.product_id).precio
+	@sell.total = total
     respond_to do |format|
       if @sell.save
         format.html { redirect_to @sell, notice: 'Sell was successfully created.' }
