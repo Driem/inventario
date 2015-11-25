@@ -10,26 +10,33 @@
       </ul>
     </div>
   <% end %>
-
+ 
+ <p id="demo"></p>
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script> 
+  
   <div class="field">
     <%= f.label :product_id %><br>
-    <%= f.number_field :product_id %>
+   <select name="sell[product_id]">
+      <% Product.all.each do |p| %>
+    	<option value="<%= p.id %>"><%= p.nombre %></option>
+      <% end %>
+    </select>
   </div>
-  <div class="field">
-    <%= f.label :fecha_v %><br>
-    <%= f.date_select :fecha_v %>
-  </div>
+ 
   <div class="field">
     <%= f.label :cantidad %><br>
     <%= f.number_field :cantidad %>
   </div>
-  <div class="field">
-    <%= f.label :total %><br>
-    <%= f.text_field :total %>
-  </div>
  <div class="field">
     <%= f.label :cliente %><br>
-    <%= f.number_field :client_id %>
+  <select name="sell[client_id]">
+      <% Client.all.each do |c| %>
+    	<option value="<%= c.id %>"><%= c.nombre %></option>
+      <% end %>
+    </select> 
   </div>
  
  <div class="actions">

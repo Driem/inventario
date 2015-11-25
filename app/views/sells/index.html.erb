@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Sells</h1>
+<h1>Ventas</h1>
 
 <table>
   <thead>
     <tr>
       <th>Producto</th>
-      <th>Fecha v</th>
+      <th>Fecha </th>
       <th>Cantidad</th>
       <th>Total</th>
       <th>Cliente</th>
@@ -22,9 +22,8 @@
         <td><%= sell.cantidad %></td>
         <td><%= sell.total %></td>
         <td><%= sell.client.nombre %></td>
-        <td><%= link_to 'Show', sell %></td>
-        <td><%= link_to 'Edit', edit_sell_path(sell) %></td>
-        <td><%= link_to 'Destroy', sell, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', sell %></td>
+        
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +31,4 @@
 
 <br>
 
-<%= link_to 'New Sell', new_sell_path %>
+<%= link_to 'Nueva venta', new_sell_path %>
