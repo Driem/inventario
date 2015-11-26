@@ -6939,3 +6939,2148 @@ Processing by ClientsController#index as HTML
   [1m[36mClient Load (0.3ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
   Rendered clients/index.html.erb within layouts/application (21.5ms)
 Completed 200 OK in 108ms (Views: 70.8ms | ActiveRecord: 0.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:02:33 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 13ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:02:43 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 185ms (Views: 180.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-27ed1d71eb155911268018c43a1b566a0936fe344bc596313a01522bb8fdc92c.css?body=1" for 127.0.0.1 at 2015-11-26 15:02:43 -0600
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 15:02:51 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (12.1ms)
+  Rendered products/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddImageToProducts (20151126210821)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "products" ADD "image_file_name" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "products" ADD "image_content_type" varchar
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "products" ADD "image_file_size" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "products" ADD "image_updated_at" datetime
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151126210821"]]
+  [1m[35m (77.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products"  ORDER BY "products"."id" DESC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:19:27 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:19:31 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 172ms (Views: 163.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 15:19:34 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (13.0ms)
+  Rendered products/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 15:28:53 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.4ms)
+  Rendered products/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 15:28:57 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (1.5ms)
+  Rendered products/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:29:22 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 15:29:24 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.4ms)
+  Rendered products/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2015-11-26 15:30:00 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/D6b8FeOJ5qxcZkjzLzlay7i3NzBm1ISR7zYOHB5cYotZhr73PKB/hjHNYHqax9XiHzKUU4+xPnnR1hjsjywnQ==", "product"=>{"nombre"=>"Prueba", "descripcion"=>"Imagen", "precio"=>"20.00", "cantidad"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff741f8ee28 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-1qhm0zj.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Product"}
+Unpermitted parameter: image
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("nombre", "descripcion", "precio", "cantidad", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Prueba"], ["descripcion", "Imagen"], ["precio", 20.0], ["cantidad", 2], ["created_at", "2015-11-26 21:30:00.664545"], ["updated_at", "2015-11-26 21:30:00.664545"]]
+  [1m[35m (164.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 170ms (ActiveRecord: 164.8ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2015-11-26 15:30:00 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:30:01 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.5ms)
+
+
+Started GET "/products/5/edit" for 127.0.0.1 at 2015-11-26 15:30:16 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered products/_form.html.erb (2.0ms)
+  Rendered products/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/5" for 127.0.0.1 at 2015-11-26 15:30:23 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QHjipzuoRPQI9G8QiTzOSOKiItwl0vCZznnevaEHSQaRIGOssNTikKFCw7Kv6zR0RDw0Uap3ZnJugl7mY0KIEQ==", "product"=>{"nombre"=>"Prueba", "descripcion"=>"Imagen", "precio"=>"20.0", "cantidad"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff742573e10 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-1nvqu84.jpg>, @original_filename="1545573_10202340767352914_613554839_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"1545573_10202340767352914_613554839_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"5"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 5]]
+Unpermitted parameter: image
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2015-11-26 15:30:23 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:30:23 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:30:27 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2015-11-26 15:30:35 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:30:35 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:30:38 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2015-11-26 15:32:26 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:32:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.9ms)
+
+
+Started GET "/products/5/edit" for 127.0.0.1 at 2015-11-26 15:32:29 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered products/_form.html.erb (1.8ms)
+  Rendered products/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/5" for 127.0.0.1 at 2015-11-26 15:32:35 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PazAYA+3OQeaF6d6ikseyqDrHgPopoFkhqZy/g955kns9EFrhMufYzOhC9isnOT2BnUIjmcDF48mXfKlzTwnXg==", "product"=>{"nombre"=>"Prueba", "descripcion"=>"Imagen", "precio"=>"20.0", "cantidad"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff741c62088 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-1usbza9.jpg>, @original_filename="1545573_10202340767352914_613554839_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"1545573_10202340767352914_613554839_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"5"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 5]]
+Unpermitted parameter: image
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2015-11-26 15:32:35 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:32:35 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:32:38 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 15:32:45 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.1ms)
+  Rendered products/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2015-11-26 15:33:03 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uzoxN2lrCH307iGjowIBVeM3djPRMMrsRlbtai25dS1qYrA84heuGV1YjQGF1ftpRalgvl6VXAfmrW0x7/y0Og==", "product"=>{"nombre"=>"Arroz", "descripcion"=>"Arrocito", "precio"=>"16", "cantidad"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff741f25ce8 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-jdunvq.jpg>, @original_filename="11076210_805121569572341_5535058041479495740_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"11076210_805121569572341_5535058041479495740_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+Unpermitted parameter: image
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("nombre", "descripcion", "precio", "cantidad", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "Arroz"], ["descripcion", "Arrocito"], ["precio", 16.0], ["cantidad", 1], ["created_at", "2015-11-26 21:33:03.097042"], ["updated_at", "2015-11-26 21:33:03.097042"]]
+  [1m[36m (134.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 138ms (ActiveRecord: 135.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:33:03 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:33:03 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:34:39 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:34:39 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.5ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:34:42 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:34:42 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.2ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2015-11-26 15:34:44 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:34:44 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (39.0ms)
+
+
+Started GET "/products/5/edit" for 127.0.0.1 at 2015-11-26 15:34:46 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered products/_form.html.erb (2.2ms)
+  Rendered products/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/5" for 127.0.0.1 at 2015-11-26 15:34:51 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E5kFgPFPhrSec5++OkIiCW7+kx9rib0r3a/+Jz9q0ubCwYSLejMg0DfFMxwcldg1yGCFkuQsK8B9VH58/S8T8Q==", "product"=>{"nombre"=>"Prueba", "descripcion"=>"Imagen", "precio"=>"20.0", "cantidad"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff742692738 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-198tami.pdf>, @original_filename="promesas1.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"promesas1.pdf\"\r\nContent-Type: application/pdf\r\n">}, "commit"=>"Update Product", "id"=>"5"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2015-11-26 15:34:51 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:34:51 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (27.8ms)
+
+
+Started GET "/products/5/edit" for 127.0.0.1 at 2015-11-26 15:34:53 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered products/_form.html.erb (1.8ms)
+  Rendered products/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/5" for 127.0.0.1 at 2015-11-26 15:34:58 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/DHYMXEqzCAtTDdsRofM2oggp/Pd/dxeQ1T/bOnMfpUtaVk6+lZqRIT6m85gUDbmLr6xflJYSrXjr383K4m/gg==", "product"=>{"nombre"=>"Prueba", "descripcion"=>"Imagen", "precio"=>"20.0", "cantidad"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff742a88a68 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-1fcsck.jpg>, @original_filename="11076210_805121569572341_5535058041479495740_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"11076210_805121569572341_5535058041479495740_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"5"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 11ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2015-11-26 15:34:58 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:34:58 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (31.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:35:00 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-11-26 15:35:04 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:35:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.8ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-11-26 15:35:49 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:35:49 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.7ms)
+
+
+Started GET "/products/1/edit" for 127.0.0.1 at 2015-11-26 15:35:51 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/_form.html.erb (2.6ms)
+  Rendered products/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/1" for 127.0.0.1 at 2015-11-26 15:35:56 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G+TjDhdnpfuwVGFjuCaF+K0er1zlOVl2J8xGubT3IZjKvGIFnBsDnxnizcGe8X/EC4C50Wqcz52HN8bidrLgjw==", "product"=>{"nombre"=>"Pollo", "descripcion"=>"Pollo frito", "precio"=>"12.0", "cantidad"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff741537fb0 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-m0y9l2.jpg>, @original_filename="11076210_805121569572341_5535058041479495740_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"11076210_805121569572341_5535058041479495740_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-11-26 15:35:56 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered products/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2015-11-26 15:35:56 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:36:00 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:38:51 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:38:53 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (16.8ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `thumb' for #<#<Class:0x007ff742228c88>:0x007ff741a90d90>):
+    27: 
+    28: <p>
+    29:   <strong>Imagen:</strong>
+    30:   <%=image_tag @product.image.url(thumb)%>
+    31: </p>
+    32: 
+    33: <%= link_to 'Edit', edit_product_path(@product) %> |
+  app/views/products/show.html.erb:30:in `_app_views_products_show_html_erb___932530608780735407_70349968629180'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.4ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:39:48 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/thumb/missing.png" for 127.0.0.1 at 2015-11-26 15:39:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/thumb/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:41:34 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `avatar' for nil:NilClass):
+    25:   <%= @product.descripcion %>
+    26: </p>
+    27: 
+    28: <% if @agent.avatar.file? %>
+    29:   <%= image_tag @product.image.url(:medium) %>
+    30: <% else %>
+    31:   No attachment available!
+  app/views/products/show.html.erb:28:in `_app_views_products_show_html_erb___932530608780735407_28624720'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.3ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:41:55 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2015-11-26 15:42:00 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/_form.html.erb (2.2ms)
+  Rendered products/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2015-11-26 15:42:09 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b3EFHF+ZZG05QcAy820XRJVmSxwWKi+1EDrOZuuiyc6+KYQX1OXCCZD3bJDVuu14M/hdkZmPuV6wwU49KecI2Q==", "product"=>{"nombre"=>"Arroz", "descripcion"=>"Arrocito", "precio"=>"16.0", "cantidad"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff74238d718 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-bdyxrv.jpg>, @original_filename="11076210_805121569572341_5535058041479495740_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"11076210_805121569572341_5535058041479495740_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:42:09 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2015-11-26 15:42:14 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/_form.html.erb (2.2ms)
+  Rendered products/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2015-11-26 15:42:20 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7mCYECCsjRv3N42GIBpoZuYz5NM0iTOHstVPC9REAqM/OBkbq9Arf16BISQGzZJaQK3yXrsspWwSLs9QFgHDtA==", "product"=>{"nombre"=>"Arroz", "descripcion"=>"Arrocito", "precio"=>"16.0", "cantidad"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff741dc8bc0 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-11lupua.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:42:20 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:43:12 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 7.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2015-11-26 15:43:14 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/_form.html.erb (2.3ms)
+  Rendered products/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2015-11-26 15:43:19 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"apICITpPt5l9J9H0Dovp2IiVoTJU+M20z2pNs6hDyGe7yoMqsTMR/dSRfVYoXBPkLgu3v9tdW19vkc3oagYJcA==", "product"=>{"nombre"=>"Arroz", "descripcion"=>"Arrocito", "precio"=>"16.0", "cantidad"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff741c3e098 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-fzkmnl.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:43:19 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:45:21 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 6.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2015-11-26 15:45:23 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/_form.html.erb (2.1ms)
+  Rendered products/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2015-11-26 15:45:28 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z7zkPjIA62ygDb3D5+Nuwn3ipw/Z0OE3EU4Vl0herfke5GU1uXxNCAm7EWHBNJT+23yxglZ1d9yxtZXMihts7g==", "product"=>{"nombre"=>"Arroz", "descripcion"=>"Arrocito", "precio"=>"16.0", "cantidad"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff741a5d788 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-u0eejd.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:45:28 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2015-11-26 15:45:30 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/_form.html.erb (1.9ms)
+  Rendered products/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2015-11-26 15:50:21 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/_form.html.erb (2.3ms)
+  Rendered products/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 18ms (Views: 8.6ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2015-11-26 15:50:22 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"134GyCxs5vCklJU8lbaMJPUiGQRb6Z2kZgXuL27/SMUGJofDpxBAlA0iOZ6zYXYYU7wPidRMC0/G/m50rLqJ0g==", "product"=>{"nombre"=>"Arroz", "descripcion"=>"Arrocito", "precio"=>"16.0", "cantidad"=>"1"}, "commit"=>"Update Product", "id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:50:22 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2015-11-26 15:50:25 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/_form.html.erb (2.8ms)
+  Rendered products/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2015-11-26 15:50:31 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jecDxwkFYrkH0HEnksqFvHGoX0Wg5aabs7aDWjC7csxcv4LMgnnE3a5m3YW0HX+A1zZJyC9AMHATTQMB8v6z2w==", "product"=>{"nombre"=>"Arroz", "descripcion"=>"Arrocito", "precio"=>"16.0", "cantidad"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff741875d58 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-1jl81g6.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:50:31 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:50:34 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 15:50:35 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.2ms)
+  Rendered products/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2015-11-26 15:50:55 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AL7UIxT0hgXECgp8UOQl2OiZsD99/g1mfpDlMTpG5wbR5lUon4ggYW28pt52M9/kTgemsvJbm43ea2Vq+AMmEQ==", "product"=>{"nombre"=>"Aceite", "descripcion"=>"Oliva", "precio"=>"56", "cantidad"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000002b2cad0 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-xpnsvd.jpg>, @original_filename="1545573_10202340767352914_613554839_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"1545573_10202340767352914_613554839_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:27:in `create'
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("nombre", "descripcion", "precio", "cantidad", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Aceite"], ["descripcion", "Oliva"], ["precio", 56.0], ["cantidad", 2], ["created_at", "2015-11-26 21:50:55.786693"], ["updated_at", "2015-11-26 21:50:55.786693"]]
+  [1m[35m (168.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/7
+Completed 302 Found in 174ms (ActiveRecord: 168.9ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2015-11-26 15:50:55 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered products/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:51:00 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 15:53:16 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (8.3ms)
+  Rendered products/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 15:53:21 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:53:23 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2015-11-26 15:53:26 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/_form.html.erb (1.6ms)
+  Rendered products/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2015-11-26 15:53:33 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L0OB4RMgn6jmlpE90/OrSGhfuCVixAfZBRTmeEtVPkr+GwDqmFw5zE8gPZ/1JFF0zsGuqO1hkTKl72YjiRD/XQ==", "product"=>{"nombre"=>"Arroz", "descripcion"=>"Arrocito", "precio"=>"16.0", "cantidad"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff7419964d0 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-fush35.jpg>, @original_filename="1545573_10202340767352914_613554839_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"1545573_10202340767352914_613554839_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 15:53:33 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2015-11-26 16:00:54 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/_form.html.erb (2.1ms)
+  Rendered products/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 9.5ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/products/6" for 127.0.0.1 at 2015-11-26 16:00:58 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JWw8b4sSaUPsSptL3WegAaXeUaiMSZxExqLxs5zbBOr0NL1kAG7PJ0X8N+n7sFo9A0BHJQPsCq9mWXHoXp7F/Q==", "product"=>{"nombre"=>"Arroz", "descripcion"=>"Arrocito", "precio"=>"16.0", "cantidad"=>"1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff742401dc0 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-1xaw369.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.0ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/6
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2015-11-26 16:00:58 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 16:01:04 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 16:01:05 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.0ms)
+  Rendered products/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2015-11-26 16:01:18 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KP1XiTrgqJiu4Du+NmGpvOE03AOS2QtRXiJQFotXgBj5pdaCsZwO/AdWlxwQtlOAR6rKjh18nbr+2dBNSRJBDw==", "product"=>{"nombre"=>"Seguimos", "descripcion"=>"Hola", "precio"=>"34", "cantidad"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff74200fe60 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-eskldm.jpg>, @original_filename="11076210_805121569572341_5535058041479495740_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"11076210_805121569572341_5535058041479495740_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:27:in `create'
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("nombre", "descripcion", "precio", "cantidad", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["nombre", "Seguimos"], ["descripcion", "Hola"], ["precio", 34.0], ["cantidad", 2], ["created_at", "2015-11-26 22:01:18.975203"], ["updated_at", "2015-11-26 22:01:18.975203"]]
+  [1m[35m (149.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/8
+Completed 302 Found in 154ms (ActiveRecord: 149.6ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2015-11-26 16:01:19 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered products/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 16:12:44 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 16:13:05 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/8/edit" for 127.0.0.1 at 2015-11-26 16:13:07 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered products/_form.html.erb (1.7ms)
+  Rendered products/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/8" for 127.0.0.1 at 2015-11-26 16:13:11 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4etLoFMxGQMroBNvDI6HUcjTE0BPmRy/HwgmkOVuCsgws8qr2E2/Z4IWv80qWX1tbk0FzcA8ilS/86bLJyvL3w==", "product"=>{"nombre"=>"Seguimos", "descripcion"=>"Hola", "precio"=>"34.0", "cantidad"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff742895800 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-15imprs.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"8"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/8
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2015-11-26 16:13:11 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered products/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 16:13:14 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-11-26 16:13:17 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.1ms)
+  Rendered products/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2015-11-26 16:13:29 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDqbyxOAlZlLhqjgom/u5lZtZla0KMyAkFwbPvCnGpuhYhrAmPwz/eIwBEKEuBTa8PNw2zuNWmswp5tlMuLbjA==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff74240d490 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-8pvt8h.jpg>, @original_filename="1545573_10202340767352914_613554839_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"1545573_10202340767352914_613554839_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Product"}
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:27:in `create'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("nombre", "descripcion", "precio", "cantidad", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["nombre", "dwa"], ["descripcion", "dgr"], ["precio", 52.0], ["cantidad", 3], ["created_at", "2015-11-26 22:13:29.336059"], ["updated_at", "2015-11-26 22:13:29.336059"]]
+  [1m[36m (159.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 163ms (ActiveRecord: 159.5ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:13:29 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 16:13:32 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:17:12 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:17:14 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/_form.html.erb (2.0ms)
+  Rendered products/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:17:18 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YTF/0E4rL5sPd1/TfwqFdM8UrOzA+lVzKJjSVXYNzsewaf7bxVeJ/6bB83FZ3X9IaYq6YU9fw5iIY1IOtEgP0A==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff7427f50d0 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-9995-1rdw9n2.jpg>, @original_filename="1545573_10202340767352914_613554839_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"1545573_10202340767352914_613554839_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:17:18 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 16:17:24 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 16:18:10 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 171ms (Views: 160.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:18:14 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/_form.html.erb (13.8ms)
+  Rendered products/edit.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:18:21 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVnt5+2vu5XTBW7vCJlLKmJ+VEb1hE1S6bz6wtLZrcSIAWzsZtMd8Xqzwk0uTrEWxOBCy3oh27lJR3qZEJxs0w==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f7165ce3de8 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-11792-1m5g4ge.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:18:21 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:18:24 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/_form.html.erb (2.0ms)
+  Rendered products/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:18:31 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UdK3WAoVRtJ5uCkT2s1c9XO7+0FJyiCTMhSs2rdx6gCAijZTgWngttAOhbH8GqbJ1SXtzMZvtniS7yyBdTQrFw==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f7166090838 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-11792-nvrexq.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:18:31 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:20:29 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 181ms (Views: 158.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:20:31 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/_form.html.erb (15.2ms)
+  Rendered products/edit.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:20:36 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R625XuNCZ2J3L0Q1CEPGurKkJNiKkEb8jxxL26qACMSW9ThVaD7BBt6Z6JculDyGFDoyVQU10Bcv58uAaMXJ0w==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f1475bbe758 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-11915-1poihiv.jpg>, @original_filename="1545573_10202340767352914_613554839_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"1545573_10202340767352914_613554839_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:20:36 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:20:38 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/_form.html.erb (2.1ms)
+  Rendered products/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:20:46 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZR7cEyVDH4tIBM4KNBNMfTqb1CrW75o3ZKkEpj+BBvi0Rl0Yrj+57+GyYqgSxLZBnAXCp1lKDNzEUoT9/cTH7w==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f1475dead60 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-11915-dacspj.docx>, @original_filename="promesas.docx", @content_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"promesas.docx\"\r\nContent-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:20:46 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:20:48 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/_form.html.erb (1.7ms)
+  Rendered products/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:20:54 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7phRt1bnWeka73Dt4dnSj7ZpF4N4lbF0SM2IQApjfus/wNC83Zv/jbNZ3E/HDiizEPcBDvcwJ5/oNggbyCa//A==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f147604b398 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-11915-1no6cgr.jpg>, @original_filename="11076210_805121569572341_5535058041479495740_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"11076210_805121569572341_5535058041479495740_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:20:54 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 16:20:58 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/products" for 127.0.0.1 at 2015-11-26 16:24:30 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 173ms (Views: 162.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:24:33 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/_form.html.erb (1.1ms)
+  Rendered products/edit.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/janiel/ExamenAngie/inventario/app/views/products/_form.html.erb:1: syntax error, unexpected tLABEL
+...pend=  form_for(@product),html: {multipart: true } do |f| @o...
+...                               ^
+/home/janiel/ExamenAngie/inventario/app/views/products/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+...ct),html: {multipart: true } do |f| @output_buffer.safe_appe...
+...                               ^
+/home/janiel/ExamenAngie/inventario/app/views/products/_form.html.erb:39: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/products/_form.html.erb:1: syntax error, unexpected tLABEL
+  app/views/products/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/products/_form.html.erb:39: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/views/products/edit.html.erb:3:in `_app_views_products_edit_html_erb__4591400005158243803_70170315726060'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.5ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:25:24 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/_form.html.erb (16.2ms)
+  Rendered products/edit.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:25:29 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F1sXX0apKoL5NsbJM2Hu3qVUPSrB/WM9nFCLVLA/Ij7GA5ZUzdWM5lCAamsVthTiA8orp05Y9dY8qwsPcnrjKQ==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa39a9078c0 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-12129-1jmtvez.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:25:30 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:26:45 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/medium/missing.png" for 127.0.0.1 at 2015-11-26 16:26:45 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.8ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:26:49 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/medium/missing.png" for 127.0.0.1 at 2015-11-26 16:26:49 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.7ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:26:51 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/_form.html.erb (2.7ms)
+  Rendered products/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:26:55 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qb2VYPrRAn/F+5G3AXKXCI9XzTEcfCUBEWPEngvocRp45RRrca2kG2xNPRUnpW00KcnbvJPZs+qxmETFya2wDQ==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa399cb87e0 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-12129-8i3bxc.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:26:55 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/medium/missing.png" for 127.0.0.1 at 2015-11-26 16:26:55 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.7ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:29:59 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/_form.html.erb (2.1ms)
+  Rendered products/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 9.3ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:30:04 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LsLtMF/F3MvnBHvZtA5KZDa+NUANIrMZYiCI0H1ulVD/mmw71Ll6r06y13uS2bBYkCAjzYKHJfLC2wiLvytURw==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa399a528e8 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-12129-1h76qzb.jpg>, @original_filename="11076210_805121569572341_5535058041479495740_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"11076210_805121569572341_5535058041479495740_n.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes for Product: image
+	app/controllers/products_controller.rb:44:in `block in update'
+	app/controllers/products_controller.rb:43:in `update'
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:30:04 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/medium/missing.png" for 127.0.0.1 at 2015-11-26 16:30:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.5/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.5/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/janiel/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (31.5ms)
+
+
+Started GET "/products/9/edit" for 127.0.0.1 at 2015-11-26 16:30:06 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered products/_form.html.erb (1.8ms)
+  Rendered products/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/9" for 127.0.0.1 at 2015-11-26 16:31:27 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S1SeHp5DGBB3jAY/5B4ziO5JTQJTbl63tBU89HDoIYyaDB8VFT++dN46qp3Cycm0SNdbj9zLyFwU7ryvsq3gmw==", "product"=>{"nombre"=>"dwa", "descripcion"=>"dgr", "precio"=>"52.0", "cantidad"=>"3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fa39a11cf48 @tempfile=#<Tempfile:/tmp/RackMultipart20151126-12129-1ls55x9.png>, @original_filename="Cosas.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Cosas.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update Product", "id"=>"9"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/tmp/d5b6cc4acb1ce09e17701286b097564720151126-12129-515uki.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/d5b6cc4acb1ce09e17701286b097564720151126-12129-1nsglth.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/d5b6cc4acb1ce09e17701286b097564720151126-12129-1nsglth.png[0]'
+Command :: convert '/tmp/d5b6cc4acb1ce09e17701286b097564720151126-12129-1nsglth.png[0]' -auto-orient -resize "600x600" '/tmp/60990838f1984dc04a867168713ece9420151126-12129-1gigf94'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/d5b6cc4acb1ce09e17701286b097564720151126-12129-1nsglth.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/d5b6cc4acb1ce09e17701286b097564720151126-12129-1nsglth.png[0]'
+Command :: convert '/tmp/d5b6cc4acb1ce09e17701286b097564720151126-12129-1nsglth.png[0]' -auto-orient -resize "300x300" '/tmp/60990838f1984dc04a867168713ece9420151126-12129-tgmmnf'
+Command :: file -b --mime '/tmp/d5b6cc4acb1ce09e17701286b097564720151126-12129-194566r.png'
+  [1m[35mSQL (0.3ms)[0m  UPDATE "products" SET "image_file_name" = ?, "image_content_type" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "products"."id" = ?  [["image_file_name", "Cosas.png"], ["image_content_type", "image/png"], ["image_file_size", 305611], ["image_updated_at", "2015-11-26 22:31:27.711097"], ["updated_at", "2015-11-26 22:31:28.289773"], ["id", 9]]
+  [1m[36m (128.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/9
+Completed 302 Found in 729ms (ActiveRecord: 129.1ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-11-26 16:31:28 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms)
