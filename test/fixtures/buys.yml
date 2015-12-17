@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Fecha: 2015-12-17
+  cantidad: 1
+  proveedor: MyString
+  total: 9.99
+  id_producto: 1
+  descripcion: MyString
+
+two:
+  Fecha: 2015-12-17
+  cantidad: 1
+  proveedor: MyString
+  total: 9.99
+  id_producto: 1
+  descripcion: MyString
